@@ -1,4 +1,5 @@
 import 'package:app_info_basic/props/props.dart';
+import 'package:app_info_basic/screens/ponto_tur_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -56,7 +57,16 @@ class HomePage extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   GestureDetector(
-                                    onTap: (){},
+                                    onTap: (){
+
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => PontoTurPage()
+                                          )
+                                      );
+
+                                    },
                                     child: Align(
                                       alignment: Alignment.bottomLeft,
                                       child: Padding(
