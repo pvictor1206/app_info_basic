@@ -90,7 +90,7 @@ class PontoTurPage extends StatelessWidget {
                             alignment: Alignment.bottomLeft,
                             child: Padding(
                               padding: EdgeInsets.all(5.50),
-                              child: getAppBorderButton("Canoa Furada", EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0), Colors.blue, Colors.white),
+                              child: getAppBorderButton("Canoa Quebrada", EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0), Colors.blue, Colors.white),
                             ),
                           ),
                         ),
