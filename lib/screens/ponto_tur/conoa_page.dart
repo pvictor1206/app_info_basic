@@ -9,7 +9,7 @@ class ConoaPage extends StatelessWidget {
 
       appBar: AppBar(
         title: Text(
-          "Canoa Furada",
+          "Canoa Quebrada",
           style: TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.black
