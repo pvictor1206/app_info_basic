@@ -22,22 +22,49 @@ class ConoaPage extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.all(10.50),
         child: Container(
-          //alignment: FractionalOffset.center,
-            child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Container(
-                    child: Text(
-                      "Canoa Quebrada é uma praia localizada no litoral leste do Estado do Ceará, Distante 163 km de Fortaleza e 12 km da sede do município de Aracati, à qual pertence. A sua paisagem é caracterizada por dunas e falésias avermelhadas de até trinta metros acima do nível do mar.",
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontSize: 15.0,
-                      ),
+          alignment: FractionalOffset.center,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+
+              Container(
+                child: SingleChildScrollView(
+                  child: Container(
+                    child: Column(
+                      children: [
+
+                        Container(
+                          child: SingleChildScrollView(
+                            child: Container(
+                              child: Column(
+                                children: [
+
+                                  Container(
+                                    child: Text(
+                                      "        Canoa Quebrada é uma praia localizada no litoral leste do Estado do Ceará, Distante 163 km de Fortaleza e 12 km da sede do município de Aracati, à qual pertence. A sua paisagem é caracterizada por dunas e falésias avermelhadas de até trinta metros acima do nível do mar.",
+                                      textAlign: TextAlign.justify,
+                                      style: TextStyle(
+                                        fontSize: 15.0,
+                                      ),
+                                    ),
+                                  ),
+
+                                ],
+                              ),
+                            ),
+                          ),
+                        )
+
+
+                      ],
                     ),
                   ),
-                ],
-              ),
-            )
+                ),
+              )
+
+            ],
+          ),
         ),
       ),
     );

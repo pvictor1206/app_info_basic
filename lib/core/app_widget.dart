@@ -2,6 +2,8 @@ import 'package:app_info_basic/screens/home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import '../mode.dart';
+
 
 class AppWidget extends StatelessWidget {
   // This widget is the root of your application.
