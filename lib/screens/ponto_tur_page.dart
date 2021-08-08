@@ -1,7 +1,5 @@
 import 'package:app_info_basic/props/props.dart';
-import 'package:app_info_basic/screens/ponto_tur/conoa_page.dart';
-import 'package:app_info_basic/screens/ponto_tur/fort_page.dart';
-import 'package:app_info_basic/screens/ponto_tur/jeri_page.dart';
+import 'package:app_info_basic/screens/button.dart';
 import 'package:flutter/material.dart';
 
 class PontoTurPage extends StatelessWidget {
@@ -75,24 +73,11 @@ class PontoTurPage extends StatelessWidget {
                           ),
                         ),
 
-                        GestureDetector(
-                          onTap: (){
-
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => ConoaPage()
-                                )
-                            );
-
-                          },
-                          child: Align(
-                            alignment: Alignment.bottomLeft,
-                            child: Padding(
-                              padding: EdgeInsets.all(5.50),
-                              child: getAppBorderButton("Canoa Quebrada", EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0), Colors.blue, Colors.white),
-                            ),
-                          ),
+                        ButtonPage(
+                            "Canoa Quebrada",
+                            "        Canoa Quebrada é uma praia localizada no litoral leste do Estado do Ceará, Distante 163 km de Fortaleza e 12 km da sede do município de Aracati, à qual pertence. A sua paisagem é caracterizada por dunas e falésias avermelhadas de até trinta metros acima do nível do mar.",
+                            null,
+                            "Canoa Quebrada"
                         ),
                       ],
                     ),

@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
-class ConoaPage extends StatelessWidget {
-  const ConoaPage({Key? key}) : super(key: key);
+
+class TelaPage extends StatelessWidget {
+  //const FortPage({Key? key}) : super(key: key);
+
+  String titulo;
+  String texto;
+  String texto2;
+
+
+  TelaPage([this.titulo, this.texto, this.texto2]);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +17,7 @@ class ConoaPage extends StatelessWidget {
 
       appBar: AppBar(
         title: Text(
-          "Canoa Quebrada",
+          titulo,
           style: TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.black
@@ -35,26 +43,25 @@ class ConoaPage extends StatelessWidget {
                       children: [
 
                         Container(
-                          child: SingleChildScrollView(
-                            child: Container(
-                              child: Column(
-                                children: [
+                          child: Text(
+                            texto,
+                            textAlign: TextAlign.justify,
+                            style: TextStyle(
+                              fontSize: 15.0,
+                            ),
+                          ),
+                        ),
 
-                                  Container(
-                                    child: Text(
-                                      "        Canoa Quebrada é uma praia localizada no litoral leste do Estado do Ceará, Distante 163 km de Fortaleza e 12 km da sede do município de Aracati, à qual pertence. A sua paisagem é caracterizada por dunas e falésias avermelhadas de até trinta metros acima do nível do mar.",
-                                      textAlign: TextAlign.justify,
-                                      style: TextStyle(
-                                        fontSize: 15.0,
-                                      ),
-                                    ),
-                                  ),
-
-                                ],
+                        if(texto2 != null)
+                          Container(
+                            child: Text(
+                              texto2,
+                              textAlign: TextAlign.justify,
+                              style: TextStyle(
+                                fontSize: 10.0,
                               ),
                             ),
                           ),
-                        )
 
 
                       ],
