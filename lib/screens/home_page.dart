@@ -1,6 +1,9 @@
 import 'package:app_info_basic/props/props.dart';
+import 'package:app_info_basic/screens/alert_button.dart';
+import 'package:app_info_basic/screens/button.dart';
 import 'package:app_info_basic/screens/ponto_tur_page.dart';
 import 'package:app_info_basic/screens/restaurantes_page.dart';
+import 'package:app_info_basic/screens/tela.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -21,11 +24,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
         actions: [
-          IconButton(
-              onPressed: (){},
-              icon: Icon(Icons.info),
-            color: Colors.blue,
-          ),
+          Alert("Aplicativo com fins turísticos.")
         ],
         centerTitle: true,
       ),
@@ -64,6 +63,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
 
+
                         GestureDetector(
                           onTap: (){
 
@@ -84,27 +84,10 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
 
-                        GestureDetector(
-                          onTap: (){},
-                          child: Align(
-                            //alignment: Alignment.bottomLeft,
-                            child: Padding(
-                              padding: EdgeInsets.all(5.50),
-                              child: getAppBorderButton("Lugares Para Noite", EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0), Colors.blue, Colors.white),
-                            ),
-                          ),
-                        ),
+                        ButtonPage("Jericoacoara - noites", "        Uma das opções é o bar-restaurante Samba Rock, um local alto astral com DJ's e música o vivo. Para quem quer dançar, a sugestão é o Restaurante Dona Amélia, que tem forró e uma pista ao ar livre às quartas-feiras e sábados ou o Maloca, que tem um forró às quintas-feiras.","Lugares Para Noite"),
 
-                        GestureDetector(
-                          onTap: (){},
-                          child: Align(
-                            //alignment: Alignment.bottomLeft,
-                            child: Padding(
-                              padding: EdgeInsets.all(5.50),
-                              child: getAppBorderButton("Surpreenda-se", EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0), Colors.blue, Colors.white),
-                            ),
-                          ),
-                        ),
+                        ButtonPage("Em breve", "Em breve", "Surpreenda-se")
+
                       ],
                     ),
                   ),

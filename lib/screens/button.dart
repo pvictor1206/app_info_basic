@@ -6,13 +6,12 @@ import 'package:flutter/material.dart';
 class ButtonPage extends StatelessWidget {
   //const ButtonPage({Key? key}) : super(key: key);
 
-  String titulo;
-  String texto;
-  String texto2;
-  String button;
+  late String titulo;
+  late String texto;
+  late String button;
 
 
-  ButtonPage([this.titulo, this.texto, this.texto2, this.button]);
+  ButtonPage(this.titulo, this.texto, this.button);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +21,7 @@ class ButtonPage extends StatelessWidget {
         Navigator.push(
             context,
             MaterialPageRoute(
-                builder: (context) => TelaPage(titulo, texto, texto2)
+                builder: (context) => TelaPage(titulo, texto)
             )
         );
 
